@@ -1,0 +1,2 @@
+#!/bin/bash
+grep root -A 3 --group-separator=SEP < /etc/passwd
