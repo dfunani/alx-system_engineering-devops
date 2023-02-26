@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # This script is displaying "Best School" 10 times
 array=0
-until [ $array -lt 10 ] ; do
+until [ $array -eq 10 ] ; do
     echo "Best School"
     array=$((array+1))
 done
