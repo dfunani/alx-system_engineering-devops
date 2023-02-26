@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# This script is displaying "Best School" 10 times
+array=0
+while [ $array -lt 10 ] ; do
+    if [ $array -eq 8 ]; then
+       echo "Best School\nHi"
+    else
+	echo "Best School"
+    fi
+    array=$((array+1))
+done
