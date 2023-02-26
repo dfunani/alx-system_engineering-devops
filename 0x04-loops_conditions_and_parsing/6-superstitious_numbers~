@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+# This script is displaying "Best School" 10 times
+array=1
+while [ $array -le 20 ] ; do
+case $array in
+    3) echo "bad luck from China";;
+    8) echo "bad luck from Japan";;
+    16) echo "bad luck from Italy";;
+esac
+if [ $array -ne 3 && $array -ne 8 && $array -ne 16 ] ; then
+    echo "${array}"
+fi
+array=$((array+1))
+done
