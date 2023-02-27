@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# kills rcos
+
+pkill "bash ./7-highlander" -f
