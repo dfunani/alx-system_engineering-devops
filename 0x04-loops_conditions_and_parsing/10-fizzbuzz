@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# displays information about the school file.
+# displays Best School 10 times.
 count=1
 while [ $count -le 100 ]
 do
