@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 # print bash processes.
 
-top
+ps -auxf
