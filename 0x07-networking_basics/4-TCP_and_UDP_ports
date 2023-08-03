@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# OSI Model
+nestat -1p
