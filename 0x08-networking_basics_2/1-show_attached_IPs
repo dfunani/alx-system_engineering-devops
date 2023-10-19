@@ -1,3 +1,0 @@
-#!/usr/bin/env bash
-# print ifocngi
-ifconfig | grep "inet " | tr ":" " " | awk '{print $3}'
