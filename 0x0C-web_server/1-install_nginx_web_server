@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+# CReates Nginx Server
+sudo apt-get update -y && sudo apt-get install nginx -y
+
+sudo service nginx start
+
+sudo ufw allow 'Nginx HTTP'
+
+# Give the user ownership to website files for easy editing
+sudo chown -R "$USER":"$USER" /var/www/html
+sudo chmod -R 755 /var/www
+
+# Backup default index
+cp /var/www/html/index.nginx-debian.html /var/www/html/index.nginx-debian.html.bckp
+
+# Creating new index
+echo -e "Hello World!" | dd status=none of=/var/www/html/index.nginx-debian.html
+
+# Restarting nginx
+sudo service nginx restart
