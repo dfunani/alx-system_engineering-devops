@@ -15,8 +15,6 @@ def number_of_subscribers(subreddit):
     """
     endpoint = f"r/{subreddit}/about.json"
     url = f"{BASE_URL}{endpoint}"
-    print(url)
-    return url
     response = get(url, headers=HEADERS, allow_redirects=False)
     if response.status_code == 404:
         return 0
