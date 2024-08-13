@@ -15,8 +15,10 @@ def number_of_subscribers(subreddit):
     """
     endpoint = f"r/{subreddit}/about.json"
     url = f"{BASE_URL}{endpoint}"
+    print(url)
+    return url
     response = get(url, headers=HEADERS, allow_redirects=False)
     try:
-        return response.json().get("data", {}).get("subscribers", 0)
-    except TypeError:
+        return response.json().get("data").get("subscribers")
+    except BaseException:
         return 0
