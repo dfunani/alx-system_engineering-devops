@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 """Reddit API - Subscribers"""
 from requests import get
 
